@@ -16,8 +16,18 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
   then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
+
+  brew analytics off
+
+  brew install git
+  brew install fish
+
+  brew cask install iterm2
+  brew cask install rectangle
+  brew cask install gpg-suite # For signed commits; for instructions, see: https://help.github.com/en/articles/generating-a-new-gpg-key
+
 
 fi
 
