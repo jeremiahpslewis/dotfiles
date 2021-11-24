@@ -19,15 +19,22 @@ then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   fi
 
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jpslewis/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
   brew analytics off
 
   brew install git
   brew install fish
 
-  brew cask install iterm2
-  brew cask install rectangle
-  brew cask install gpg-suite # For signed commits; for instructions, see: https://help.github.com/en/articles/generating-a-new-gpg-key
+  brew install --cask iterm2
+  brew install  --cask rectangle
+  brew install  --cask gpg-suite # For signed commits; for instructions, see: https://help.github.com/en/articles/generating-a-new-gpg-key
+  brew install --cask mullvadvpn
 
+
+  brew tap homebrew/cask-fonts
+  brew install --cask font-juliamono
 
 fi
 
