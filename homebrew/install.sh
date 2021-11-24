@@ -35,6 +35,7 @@ then
 
   brew tap homebrew/cask-fonts
   brew install --cask font-juliamono
+  brew install --cask font-menlo-for-powerline
 
 fi
 
