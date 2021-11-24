@@ -37,6 +37,8 @@ then
   brew install --cask font-juliamono
   brew install --cask font-menlo-for-powerline
 
+  brew install shellcheck
+
 fi
 
 exit 0
