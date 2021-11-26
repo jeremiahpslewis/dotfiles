@@ -31,7 +31,7 @@ then
   brew install  --cask rectangle
   brew install  --cask gpg-suite # For signed commits; for instructions, see: https://help.github.com/en/articles/generating-a-new-gpg-key
   brew install --cask mullvadvpn
-
+  brew install --cask postman
 
   brew tap homebrew/cask-fonts
   brew install --cask font-juliamono
