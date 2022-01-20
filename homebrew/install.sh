@@ -38,6 +38,10 @@ then
   brew install --cask font-menlo-for-powerline
 
   brew install shellcheck
+  
+  brew install zoxide
+  brew install starship
+
 
 fi
 
