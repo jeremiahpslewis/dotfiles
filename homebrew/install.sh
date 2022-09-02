@@ -25,7 +25,6 @@ then
   brew analytics off
 
   brew install git
-  brew install fish
 
   brew install --cask iterm2
   brew install  --cask rectangle
